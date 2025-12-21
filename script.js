@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
  canvas.style.width = '100%'; 
  canvas.style.height = '100%'; 
  canvas.style.zIndex = '-1'; 
- canvas.style.background = 'radial-gradient(circle at center, #1a1a1a 0%, #000000 100%)'; 
+ canvas.style.background = 'radial-gradient(circle at center, #2c3e50 0%, #000000 100%)'; 
  document.body.appendChild(canvas); 
 
  const ctx = canvas.getContext('2d'); 
