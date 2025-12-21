@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
  }; 
  animate(); 
 
- /* ====== 3. AUDIO FEEDBACK SYSTEM (Mech-UI) ====== */
+ /* ====== 3. AUDIO FEEDBACK SYSTEM (AI&ML-UI) ====== */
  const audioCtx = new (window.AudioContext || window.webkitAudioContext)(); 
 
  const playSound = (type) => {
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
  /* ====== 7. TYPEWRITER EFFECT ====== */
  const subtitle = document.querySelector(".subtitle"); 
  if (subtitle) { 
-     const text = "software Engineer & "; 
+     const text = "software Engineer & Programmer"; 
      subtitle.textContent = ""; 
      let i = 0;
      function typeWriter() {
@@ -398,7 +398,7 @@ document.addEventListener("DOMContentLoaded", () => {
          document.title = "Connection Lost..."; 
      } else {
          titleIndex = (titleIndex + 1) % titleAlt.length;
-         document.title = `Prajwal E. | ${titleAlt[titleIndex]}`; 
+         document.title = `Sireesha Ananda. | ${titleAlt[titleIndex]}`; 
      }
  }, 2500);
 
