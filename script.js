@@ -1,4 +1,4 @@
-/* Prajwal E. Portfolio Main JavaScript
+/* Sireesha Ananda. Portfolio Main JavaScript
  Features: Boot Sequence, FEA Mesh, Synchro-Gears, Mech-Audio, Decipher Text, Tab Ticker
 */
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
      "> INITIALIZING PORTFOLIO...", 
      "> LOADING PROJECT ARCHIVES...",
      "> RENDERING VISUAL ASSETS. ", 
-     "> WELCOME, PRAJWAL."
+     "> WELCOME, Sireesha."
  ]; 
 
  if (bootScreen && bootText) {
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
  /* ====== 7. TYPEWRITER EFFECT ====== */
  const subtitle = document.querySelector(".subtitle"); 
  if (subtitle) { 
-     const text = "Mechanical Engineer & Visual Storyteller"; 
+     const text = "software Engineer & "; 
      subtitle.textContent = ""; 
      let i = 0;
      function typeWriter() {
