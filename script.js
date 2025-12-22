@@ -1,65 +1,65 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. BOOT SEQUENCE
+
+    /* --- BOOT SEQUENCE --- */
     const bootScreen = document.getElementById('boot-screen');
     const bootText = document.getElementById('boot-text');
-    const messages = ["> SYSTEM ONLINE", "> LOADING PROFILE...", "> WELCOME SIREESHA"];
+    const messages = ["> INITIALIZING...", "> DATA LOADED", "> WELCOME SIREESHA"];
     
-    let i = 0;
-    function runBoot() {
-        if(i < messages.length) {
-            const div = document.createElement('div');
-            div.textContent = messages[i++];
-            bootText.appendChild(div);
-            setTimeout(runBoot, 300);
+    let mIdx = 0;
+    function typeMessages() {
+        if(mIdx < messages.length) {
+            const line = document.createElement('div');
+            line.textContent = messages[mIdx++];
+            bootText.appendChild(line);
+            setTimeout(typeMessages, 250);
         } else {
-            setTimeout(() => bootScreen.classList.add('fade-out'), 500);
+            setTimeout(() => bootScreen.classList.add('fade-out'), 400);
         }
     }
-    runBoot();
+    typeMessages();
 
-    // 2. DECIPHER EFFECT
-    const letters = "ABCDEFGHIKLMNOPQRSTUV0123456789";
-    document.querySelectorAll('.card h3').forEach(header => {
-        header.onmouseenter = event => {
-            let iteration = 0;
-            const original = event.target.innerText;
+    /* --- DECIPHER TEXT --- */
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    document.querySelectorAll('.card h3').forEach(h => {
+        h.addEventListener('mouseenter', e => {
+            let iter = 0;
+            const original = e.target.innerText;
             const interval = setInterval(() => {
-                event.target.innerText = original.split("").map((l, idx) => {
-                    if(idx < iteration) return original[idx];
-                    return letters[Math.floor(Math.random() * 26)];
+                e.target.innerText = original.split("").map((l, i) => {
+                    if(i < iter) return original[i];
+                    return letters[Math.floor(Math.random() * 36)];
                 }).join("");
-                if(iteration >= original.length) clearInterval(interval);
-                iteration += 1 / 3;
+                if(iter >= original.length) clearInterval(interval);
+                iter += 1/3;
             }, 30);
-        };
+        });
     });
 
-    // 3. COUNTER ANIMATION
-    const observer = new IntersectionObserver((entries) => {
+    /* --- COUNTERS --- */
+    const obs = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if(entry.isIntersecting) {
                 const target = +entry.target.getAttribute('data-target');
                 let count = 0;
+                const inc = target / 100;
                 const update = () => {
-                    const speed = target / 50;
-                    if (count < target) {
-                        count += speed;
-                        entry.target.innerText = Math.floor(count);
+                    if(count < target) {
+                        count += inc;
+                        entry.target.innerText = Math.ceil(count);
                         setTimeout(update, 20);
                     } else { entry.target.innerText = target; }
                 };
                 update();
-                observer.unobserve(entry.target);
+                obs.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.counter').forEach(c => obs.observe(c));
 
-    document.querySelectorAll('.counter').forEach(c => observer.observe(c));
-
-    // 4. GEAR ROTATION
+    /* --- GEAR ROTATION --- */
     window.addEventListener('scroll', () => {
-        const rotation = window.scrollY / 5;
-        document.querySelector('.gear-1').style.transform = `rotate(${rotation}deg)`;
-        document.querySelector('.gear-2').style.transform = `rotate(-${rotation}deg)`;
+        const rot = window.scrollY / 10;
+        document.querySelector('.gear-1').style.transform = `rotate(${rot}deg)`;
+        document.querySelector('.gear-2').style.transform = `rotate(${-rot}deg)`;
     });
 });
