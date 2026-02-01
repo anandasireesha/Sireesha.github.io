@@ -6,14 +6,14 @@
 
 body {
   font-family: "Segoe UI", Tahoma, sans-serif;
-  background: #f5f7fb; /* soft light background */
-  color: #374151;      /* dark gray text */
+  background: #f5f7fb;
+  color: #374151;
   line-height: 1.7;
 }
 
 /* ===== HEADER ===== */
 header {
-  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -21,21 +21,20 @@ header {
 
 header h1 {
   font-size: 2.4rem;
-  margin-bottom: 8px;
 }
 
 header p {
   font-size: 1.1rem;
-  opacity: 0.95;
+  margin-top: 6px;
 }
 
 /* ===== LINKS ===== */
 .links {
-  margin-top: 15px;
+  margin-top: 14px;
 }
 
 .links a {
-  color: #e0f2fe;
+  color: #93c5fd;
   margin: 0 12px;
   text-decoration: none;
   font-weight: 600;
@@ -45,14 +44,14 @@ header p {
   text-decoration: underline;
 }
 
-/* ===== SECTIONS ===== */
+/* ===== SECTIONS (CHANGED COLOR HERE) ===== */
 section {
   max-width: 900px;
-  background: white;
+  background: #f1f5ff; /* soft light blue instead of white */
   margin: 35px auto;
   padding: 35px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
 /* ===== HEADINGS ===== */
@@ -72,20 +71,20 @@ h2 {
 
 .skills-list li {
   list-style: none;
-  background: #eff6ff;
+  background: #e0e7ff;
   color: #1e40af;
-  padding: 10px 16px;
-  border-radius: 20px;
+  padding: 10px 18px;
+  border-radius: 22px;
   font-size: 0.95rem;
   font-weight: 500;
 }
 
 /* ===== PROJECT CARDS ===== */
 .project-card {
-  margin-bottom: 22px;
-  padding: 20px;
-  border-radius: 10px;
-  background: #f9fafb;
+  margin-top: 18px;
+  padding: 22px;
+  background: #ffffffcc; /* slightly lighter card */
+  border-radius: 12px;
   border-left: 4px solid #3b82f6;
 }
 
@@ -103,7 +102,8 @@ h2 {
 footer {
   text-align: center;
   padding: 25px;
-  background: #1e3a8a;
+  background: #0f172a;
   color: #e5edff;
   margin-top: 40px;
 }
+
