@@ -6,10 +6,11 @@
 
 body {
   font-family: "Segoe UI", Tahoma, sans-serif;
-  background: #f5f7fb;
+  background: #eaf0f8;  /* NEW background color */
   color: #374151;
   line-height: 1.7;
 }
+
 
 /* HEADER */
 header {
