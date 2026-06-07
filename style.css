@@ -68,7 +68,7 @@ text-decoration:none;
 /* Hero */
 
 .hero{
-min-height:100vh;
+min-height:60vh;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -181,7 +181,7 @@ padding:30px;
 /* Sections */
 
 section{
-padding:80px 10%;
+padding:60px 10%;
 }
 
 h2{
