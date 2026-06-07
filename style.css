@@ -10,7 +10,8 @@ scroll-behavior:smooth;
 }
 
 body{
-background: #0B1120;
+    background:#08142E;
+};
 color:white;
 overflow-x:hidden;
 }
@@ -22,12 +23,10 @@ position:fixed;
 width:100%;
 height:100%;
 z-index:-1;
-background:linear-gradient(
--45deg,
-#00f5ff,
-#7c3aed,
-#00f5ff,
-#ff0080
+background: linear-gradient(
+90deg,
+#00D9FF,
+#6D5BFF
 );
 
 background-size:400% 400%;
@@ -72,7 +71,7 @@ min-height:60vh;
 display:flex;
 justify-content:center;
 align-items:center;
-padding:100px 10%;
+padding:60px 10%;
 gap:60px;
 }
 
