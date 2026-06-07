@@ -1,58 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sireesha Ananda | Portfolio</title>
-
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sireesha Ananda | AI & ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <!-- ✅ ROUND PROFILE PHOTO -->
-  <img src="./profile.jpg" alt="Sireesha Profile Photo" class="profile-pic" />
+<nav>
+    <div class="logo">Sireesha</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-  <h1>Sireesha Ananda</h1>
-  <p>Aspiring AI & ML Engineer</p>
+<section class="hero">
+    <h1>Hi, I'm <span>Sireesha Ananda</span></h1>
+    <h2>Aspiring AI & ML Engineer</h2>
 
-  <div class="links">
-    <a href="https://github.com/anandasireesha" target="_blank">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-    <a href="https://linkedin.com/in/ananda-sireesha" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a href="mailto:anandasireesha2005@gmail.com">
-      <i class="fas fa-envelope"></i> Email
-    </a>
-  </div>
+    <p>
+        Passionate about Machine Learning, Data Analysis,
+        and building intelligent solutions.
+    </p>
 
-  <!-- VIEW RESUME -->
-  <a href="./resume.pdf" target="_blank" class="resume-btn">
-    <i class="fas fa-file-pdf"></i> View Resume
-  </a>
-</header>
+    <div class="buttons">
+        <a href="resume.pdf" class="btn" download>Download Resume</a>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    Aspiring AI & ML Engineer with hands-on experience in Python,
-    machine learning, and data analysis through academic projects
-    and industry internship experience.
-  </p>
+        <a href="https://github.com/anandasireesha"
+           target="_blank"
+           class="btn-outline">
+           GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/ananda-sireesha"
+           target="_blank"
+           class="btn-outline">
+           LinkedIn
+        </a>
+    </div>
 </section>
 
-<footer>
-  <p>© 2026 Sireesha Ananda</p>
-</footer>
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I am an AI & ML student at Kuppam Engineering College.
+        I enjoy building machine learning applications,
+        solving real-world problems, and continuously learning
+        modern technologies.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-container">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>SQL</span>
+        <span>JavaScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>MySQL</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="card">
+            <h3>Doctor Appointment Booking System</h3>
+            <p>
+                Developed a Python-based system for
+                appointment scheduling and patient management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Automated Quality Control System</h3>
+            <p>
+                ML-powered defect detection system using
+                image processing and Python.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>Email: anandasireesha2005@gmail.com</p>
+
+    <div class="buttons">
+        <a href="https://github.com/anandasireesha"
+           target="_blank"
+           class="btn">
+           GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/ananda-sireesha"
+           target="_blank"
+           class="btn">
+           LinkedIn
+        </a>
+    </div>
+</section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
