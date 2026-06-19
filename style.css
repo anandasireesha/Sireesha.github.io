@@ -99,6 +99,20 @@ nav a:hover{
     line-height:1.1;
     margin-bottom:15px;
 }
+#typing-name{
+    font-size:4rem;
+    font-weight:700;
+    line-height:1.1;
+
+    background:linear-gradient(
+        90deg,
+        #00D9FF,
+        #6D5BFF
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
 
 .hero h1 span{
     background:linear-gradient(
