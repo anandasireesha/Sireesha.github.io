@@ -126,3 +126,12 @@ function typeName() {
 }
 
 window.addEventListener("load", typeName);
+window.addEventListener("scroll",()=>{
+
+const scroll=document.documentElement.scrollTop;
+
+const height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+document.getElementById("progress-bar").style.width=(scroll/height)*100+"%";
+
+});
