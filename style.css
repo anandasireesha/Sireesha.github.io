@@ -623,3 +623,12 @@ grid-template-columns:1fr;
 }
 
 }
+#progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:4px;
+    background:linear-gradient(90deg,#00D9FF,#6D5BFF);
+    z-index:9999;
+}
