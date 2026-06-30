@@ -135,3 +135,10 @@ const height=document.documentElement.scrollHeight-document.documentElement.clie
 document.getElementById("progress-bar").style.width=(scroll/height)*100+"%";
 
 });
+document.addEventListener("mousemove",(e)=>{
+
+document.body.style.setProperty("--x",e.clientX+"px");
+
+document.body.style.setProperty("--y",e.clientY+"px");
+
+});
