@@ -115,13 +115,24 @@ cards.forEach(card => {
 const nameText = "Sireesha Ananda";
 const typingElement = document.getElementById("typing-name");
 
-let i = 0;
+if (typingElement) {
 
-function typeName() {
-    if (i < nameText.length) {
-        typingElement.innerHTML += nameText.charAt(i);
-        i++;
-        setTimeout(typeName, 100);
+    let i = 0;
+
+    function typeName() {
+
+        if (i < nameText.length) {
+
+            typingElement.innerHTML += nameText.charAt(i);
+
+            i++;
+
+            setTimeout(typeName, 100);
+
+        }
+
     }
+
+    window.addEventListener("load", typeName);
 }
 
